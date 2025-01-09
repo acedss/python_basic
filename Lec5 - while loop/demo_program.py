@@ -2,11 +2,15 @@
 print("-"*30)
 print("Welcome to the program")
 running = True
-while running:
+def print_menu():
     print("1. Print Hello")
     print("2. Print World")
     print("3. Exit")
+    print("asdfasdfadsf")
     choice = input("Enter your choice: ")
+    return choice
+while running:
+    choice = print_menu()
     if choice == "1":
         print("Hello")
     elif choice == "2":
